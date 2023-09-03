@@ -1,0 +1,10 @@
+2023-09-03 01:21:56, current inputs {firstInput=15.0, secondInput=3.0, operator='/'}, result: 5.0 
+2023-09-03 01:21:56, current inputs {firstInput=5.0, secondInput=15.0, operator='+'}, result: 20.0 
+2023-09-03 01:21:56, current inputs {firstInput=-5.0, secondInput=25.0, operator='*'}, result: -125.0 
+2023-09-03 01:21:56, current inputs {firstInput=1500.0, secondInput=2500.0, operator='-'}, result: -1000.0 
+2023-09-03 01:21:56, current inputs {firstInput=1500.0, secondInput=2500.0, operator='-'}, result: -1000.0 
+2023-09-03 01:26:22, current inputs {firstInput=15.0, secondInput=3.0, operator='/'}, result: 5.0 
+2023-09-03 01:26:22, current inputs {firstInput=5.0, secondInput=15.0, operator='+'}, result: 20.0 
+2023-09-03 01:26:22, current inputs {firstInput=-5.0, secondInput=25.0, operator='*'}, result: -125.0 
+2023-09-03 01:26:22, current inputs {firstInput=1500.0, secondInput=2500.0, operator='-'}, result: -1000.0 
+2023-09-03 01:26:22, current inputs {firstInput=1500.0, secondInput=2500.0, operator='-'}, result: -1000.0 
