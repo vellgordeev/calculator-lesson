@@ -15,11 +15,14 @@ import static java.lang.System.lineSeparator;
 @Slf4j
 public class HistoryHandler {
 
+    private static final String PATH_TO_FILE = "src/test/resources/calculation_history.txt";
+
+
     public void writeHistoryToFile(Calculator calculator, String result, String timeZone) {
         var now = ZonedDateTime.now(ZoneId.of(timeZone));
         var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-        try (FileWriter writer = new FileWriter("calculation_history.txt", true)) {
+        try (FileWriter writer = new FileWriter(PATH_TO_FILE, true)) {
             writer.write(String.format("%s, %s, result: %s %n", now.format(formatter), calculator.toString(), result));
         } catch (IOException e) {
             log.error("An error occurred while writing to the file", e);
@@ -29,7 +32,7 @@ public class HistoryHandler {
     public String readHistoryFromFile() {
         var sb = new StringBuilder();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("calculation_history.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(PATH_TO_FILE))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 sb.append(line);
